@@ -1,0 +1,24 @@
+.mark-box {
+    font-size: 0;
+}
+
+.base-mark {
+    position: relative; 
+}
+
+.solid {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.icon {
+    height: 1rem;
+    margin: 0 .2rem;
+    &:first-of-type {
+        margin-left: 0;
+    }
+    &:last-of-type {
+        margin-right: 0;
+    }
+}

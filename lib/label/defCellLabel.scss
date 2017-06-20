@@ -1,0 +1,23 @@
+.panel {
+  height: 2.25rem;
+  background-color: #ffffff;
+  padding: 0 .75rem;
+  margin-bottom: .5rem;
+  border-bottom: .05rem solid #f0f0f0;
+}
+
+.align {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: .8rem;
+  color: #0d0d0d;
+}
+
+.margin-bottom {  
+  margin-bottom: 0;
+}
+
+.border-bottom {
+  border-bottom: none;
+}

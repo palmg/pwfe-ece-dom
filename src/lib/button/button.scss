@@ -1,0 +1,42 @@
+.btn-base {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem 1rem;
+    border: .05rem solid rgb(68, 144, 92);
+    border-radius: .2rem;
+    text-align: center;
+    vertical-align: middle;
+    color: rgb(68, 144, 92);
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    &:disabled {
+        @extend .btn-disabled;
+    }
+}
+
+.btn-green {
+    background-color: rgb(68, 144, 92);
+    color: #ffffff;
+}
+
+.btn-gray {
+    border-color: rgb(171, 170, 168);
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(171, 170, 168);
+
+}
+
+.btn-full {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    border-radius: 0;
+}
+
+.btn-disabled {
+    border-color: rgb(184, 189, 185);
+    background-color: rgb(184, 189, 185);
+    cursor: not-allowed;
+    color: #ffffff;
+}

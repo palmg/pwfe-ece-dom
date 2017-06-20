@@ -1,0 +1,41 @@
+.num-adjust {
+    display: inline-block;
+    height: 1.5rem;
+    border: 1px solid #D1D1D1;
+    border-radius: .2rem;
+    background: #ffffff;
+    .minus {
+        border: none;
+        border-right: 1px solid #D1D1D1;
+        border-radius: .2rem 0 0 .2rem;
+        width: 2rem;
+        height: 100%;
+        color: #D1D1D1;
+        cursor: pointer;
+        background: transparent;
+    }
+    .add {
+        border: none;
+        border-left: 1px solid #D1D1D1;
+        border-radius: 0 .2rem .2rem 0;
+        width: 2rem;
+        height: 100%;
+        color: #D1D1D1;
+        cursor: pointer;
+        background: transparent;
+    }
+    input {
+        margin: 0;
+        padding: 0;
+        width: 4rem;
+        height: 100%;
+        border: none;
+        text-align: center;
+        color: #555555;
+        -webkit-appearance: none;
+
+        &:disabled {
+            background: #ffffff;
+        }
+    }
+}

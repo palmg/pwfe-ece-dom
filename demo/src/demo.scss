@@ -1,0 +1,30 @@
+:global {
+    .api-table {
+        margin-top:20px;
+        width: 100%;
+        text-align: left;
+        border-spacing: 0;
+        thead {
+            th {
+                padding: 5px 10px;
+                background: #f7f7f7;
+                color: #5c6b77;
+                font-weight: bold;
+                border: 1px solid #e9e9e9;
+            }
+        }
+        tbody {
+            th {
+                padding: 5px 10px;
+                background: #fcfcfc;
+                color: #5c6b77;
+                border: 1px solid #e9e9e9;
+            }
+            td {
+                padding: 5px 10px;
+                color: #5c6b77;
+                border: 1px solid #e9e9e9;
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.label-span span {
+  vertical-align: middle;
+  line-height: 1;
+  float: left;
+}
+
+.name-span {
+  > img {
+    height: 1rem;
+    vertical-align: middle;
+    margin-left: .75rem;
+  }
+  > span {
+    color: #555;
+  }
+  .next-text {
+    color: #b8bdb9;
+  }
+}

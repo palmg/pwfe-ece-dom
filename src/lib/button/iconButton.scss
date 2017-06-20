@@ -1,0 +1,15 @@
+.column{
+    flex-direction: column;
+    .icon{
+        display:block;
+        margin:0 auto;
+    }
+}
+.icon {
+    margin-right: .5rem;
+    width: .7rem;
+    height: 1rem;
+    &.column{
+
+    }
+}

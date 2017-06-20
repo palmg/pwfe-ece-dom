@@ -1,0 +1,31 @@
+.img-page{
+  background-color: #fff;
+}
+.bg{
+  position: absolute;
+  opacity: .7;
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
+.left-bg{
+  left: 0;
+  top: 45%;
+  width: 40%;
+  height: 3.5rem;
+}
+.right-bg{
+  right: 0;
+  top: 35%;
+  width: 40%;
+  height: 3.5rem;
+}
+.bottom-bg{
+  width: 100%;
+  height: 7.5rem;
+  bottom: 0;
+}
+.content{
+  position: relative;
+}

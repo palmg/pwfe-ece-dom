@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+html {
+  position: relative;
+  font-size: 20px; /*由于chrome内核的浏览器最小标定字体为12px因此使用1rem=20px来换算布局大小*/
+  height: 100%;
+  * {
+    box-sizing: border-box;//全局使用盒模型
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  height: 100%;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: .7rem;//默认字体大小
+  color: #555555;
+  overflow: hidden;
+}
+
+ul, ol, dl {
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+a img {
+  border: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  word-break: break-all;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+}
+
+form {
+  margin: 0;
+  padding: 0;
+}
+
+input, select {
+  outline: none;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+textarea {
+  resize: none;
+}
+
+input, button, select, textarea {
+  outline: none;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+hr {
+  border: 0;
+  margin: 0 auto;
+}
+
+.app{
+  height: 100%;
+}
+
+//全局单行文本格式
+.inline-text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+//全局设定点击样式
+.cursor-pointer {
+  cursor: pointer;
+}
+
+//阴影大小
+.shadow {
+  box-shadow: 2px 2px 11px 2px rgba(0, 0, 0, 0.17);
+}

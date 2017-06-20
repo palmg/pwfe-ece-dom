@@ -1,0 +1,15 @@
+.panel {
+  height: 5.5rem;
+  padding: 0 1rem;
+  border-bottom: .05rem solid #B7BDB9;
+}
+
+.panel-align {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.panel-bottom {
+  border-bottom: none;
+}

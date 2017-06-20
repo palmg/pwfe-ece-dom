@@ -1,0 +1,32 @@
+.screen {
+    width: 18rem;
+    height: 35rem;
+    border-radius: 8px;
+    background: #eee;
+    box-shadow: 0 0 0 .7rem #4A4747;
+    margin: 2rem auto;
+    font-family: '微软雅黑';
+    text-align: center;
+    font-size: .8rem;
+}
+
+.top {
+    height: 3rem;
+    line-height: 3rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.bottom {
+    height: 3rem;
+    line-height: 3rem;
+    border-top: 1px solid #ccc;
+}
+
+.scroll-box {
+    height: 29rem;
+    overflow: hidden;
+    overflow-y: auto;
+    > p {
+        margin: .5rem 0;
+    }
+}

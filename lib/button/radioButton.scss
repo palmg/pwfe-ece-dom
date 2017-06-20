@@ -1,0 +1,26 @@
+.radio-grp {
+    display: inline-flex;
+    width: 300px;
+    .radio-btn {
+        flex-grow: 1;
+        margin-left: 0;
+        margin-right: 0;
+        color: #97999f;
+        border-right: 0;
+        border-radius: 0;
+        font-size: .85rem;
+        font-family: "Microsoft YaHei UI";
+        &:first-of-type {
+            border-radius: 5px 0 0 5px;
+        }
+        &:last-of-type {
+            border-right: 1px solid #44905c;
+            border-radius: 0 5px 5px 0;
+        }
+
+        &.active {
+            background-color: #44905c;
+            color: #ffffff;
+        }
+    }
+}

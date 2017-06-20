@@ -1,0 +1,44 @@
+.corner-icon {
+    position: absolute;
+    width: 0;
+    height: 0;
+    color: #fff;
+    > p {
+        position: absolute;
+        text-align: center;
+        margin: 0;
+        line-height: 1;
+    }
+}
+
+.l-t {
+    border-top-style: solid;
+    border-right-style: solid;
+    border-right-color: transparent;
+    left: 0;
+    top: 0;
+}
+
+.r-t {
+    border-top-style: solid;
+    border-left-style: solid;
+    border-left-color: transparent;
+    right: 0;
+    top: 0;
+}
+
+.l-b {
+    border-bottom-style: solid;
+    border-right-style: solid;
+    border-right-color: transparent;
+    left: 0;
+    bottom: 0;
+}
+
+.r-b {
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-left-color: transparent;
+    bottom: 0;
+    right: 0;
+}

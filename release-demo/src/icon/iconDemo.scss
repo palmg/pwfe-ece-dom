@@ -1,0 +1,18 @@
+.box {
+    font-family: '微软雅黑';
+    //border-top: 1px solid #ccc;
+    //padding: 20px;
+    text-align: left;
+    font-size: 12px;
+    > span {
+        > div {
+            display: inline-block;
+            margin-right: 20px;
+        }
+    }
+}
+
+//.desc {
+//    margin-bottom: 10px;
+//    text-align: left;
+//}

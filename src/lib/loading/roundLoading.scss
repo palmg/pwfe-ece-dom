@@ -1,0 +1,75 @@
+.round {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+.center {
+    width: 100%;
+	height: 100%;
+}
+.absolute {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 60px;
+    width: 60px;
+    margin-top: -30px;
+    margin-left: -30px;
+    animation: round-absolute 1s infinite;
+    > div {
+        width: 20px;
+        height: 20px;
+        background-color: #dedede;
+        float: left;
+        border-radius: 50% 50% 50% 50%;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    > div:nth-child(2n+0) {
+	    margin-right: 0px;
+    }
+}
+
+.one {
+	animation: one 1s infinite;
+}
+.two {
+	animation: two 1s infinite;
+}
+.three {
+	animation: three 1s infinite;
+}
+.four {
+	animation: four 1s infinite;
+}
+	
+@keyframes round-absolute{
+    100% {
+        transform: rotate(360deg); 
+	}
+}	
+		
+@keyframes one{
+    50% {
+        transform: translate(20px,20px);
+	}
+}
+	
+@keyframes two{
+    50% {
+        transform: translate(-20px,20px);
+	}
+}
+	
+@keyframes three{
+    50% {
+        transform: translate(20px,-20px);
+    }
+}
+		
+@keyframes four{
+    50% {
+        transform: translate(-20px,-20px);
+	}
+}
