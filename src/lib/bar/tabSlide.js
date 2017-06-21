@@ -23,12 +23,7 @@ export class TabSlide extends React.Component {
         super(...props)
         this.state = {
             actvie: 0,
-            move: false,
-            moveX: 0,
         }
-        this.touchStart = this.touchStart.bind(this)
-        this.touchMove = this.touchMove.bind(this)
-        this.touchEnd = this.touchEnd.bind(this)
     }
 
     componentWillMount() {
@@ -44,55 +39,26 @@ export class TabSlide extends React.Component {
         this.props.onClick(id)
     }
 
-    touchStart(e) {
-        this.setState({
-            move: true,
-            startX: e.targetTouches[0].pageX // 起始距离
-        })
-    }
-
-    touchMove(e) {
-
-        const dom = ReactDOM.findDOMNode(this.refs.box) // 盒子大小
-
-        let pageX = e.targetTouches[0].pageX, // 当前距离
-            moveX = pageX - this.state.startX + this.state.moveX, // 移动距离
-            box = dom.clientWidth, // 盒子宽度
-            ul = this.props.config.length * 100 // 列表宽度          
-
-        if(!this.state.move) return
-        if(moveX > 0) {
-            moveX = 0
-        } else if(moveX < box - ul) {
-            moveX = box - ul
-        }
-        
-        this.setState({moveX: moveX})
-    }
-
-    touchEnd() {
-        this.setState({
-            move: false 
-        })
-    }
-
-    render() { 
-
+    render() {
         const { config } = this.props
+        const tabList = config.map((item, index) => {
+            if(typeof item == 'object') {
+                return(
+                    <li key={index} className={this.state.active === index && styles['active']}
+                        onClick={this.chooseTab.bind(this, index, item.id)}>{item.name}</li>
+                    )
+            } else {
+                var info = new Date(parseInt(item));
+                var time = (info.getMonth()+"月"+info.getDate()+"日");
+                return(
+                    <li key={index} className={this.state.active === index && styles['active']}
+                        onClick={this.chooseTab.bind(this, index, item)}>{time}</li>
+                    )
+            }
+        })
 
-        const tabList = config.map((item, index) =>
-            <li key={index} className={this.state.active === index && styles['active']} 
-                onClick={this.chooseTab.bind(this, index, item.id)}>{item.name}</li>
-        )
-        
-        return ( 
+        return (
             <div className={styles['slide-box']} ref='box'>
-                {/*  
-                    <ul className={styles['tab-slide']} 
-                        style={{width: `${config.length * 100}px`, left: `${this.state.moveX}px`}}
-                        onTouchStart={this.touchStart} onTouchEnd={this.touchEnd}
-                        onTouchMove={this.touchMove}>{ tabList }</ul>
-                */}
                 <ul className={styles['tab-slide']} style={{width: `${config.length * 100}px`}}>{ tabList }</ul>
             </div>
         )
