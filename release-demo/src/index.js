@@ -11,9 +11,20 @@ import {Router, history} from 'pwfe-dom/router'
 import {buildStore} from 'pwfe-dom/flux'
 import Contain from './contain'
 import {courseOutingList} from './reducer'
+import Tag from 'pwfe-dom/tag'
 
 import './app.scss'
 import './demo.scss'
+
+if (typeof require.ensure !== 'function') {
+    require.ensure = function(dependencies, callback) {
+        callback(require)
+    }
+}
+
+require.ensure([], require => {
+    Tag.setIcon(require("../../res/img"))
+}, 'res')
 
 const store = buildStore({courseOutingList}, window.REDUX_STATE);
 render(

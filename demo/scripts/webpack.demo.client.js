@@ -1,7 +1,6 @@
 const path = require('path'),
     webpack = require('webpack'),
     HtmlWebpackPlugin = require('html-webpack-plugin')
-    CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     devtool: 'source-map',
@@ -9,7 +8,6 @@ module.exports = {
     entry: {
         'bundle': './src',
         vendor: [
-            'cookies-js',
             'classnames',
             'react',
             'react-dom',
