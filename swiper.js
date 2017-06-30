@@ -20,7 +20,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
  */
 var Swiper = {
   /**
-   *基础滑块视图容器(所有的滑块项均需要由BaseSwiper组件包装)
+   *基础滑块视图容器(所有的滑块项均需要由BaseSwiper组件包装) //test
    */
   BaseSwiper: _baseSwiper2.default,
 
