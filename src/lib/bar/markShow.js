@@ -28,7 +28,13 @@ class ImgList extends React.Component {
         })
 
         for(let i = 0; i < 5; i++) {
-            list.push(<Tag.Icon className={styles['icon']} key={i} style={{height: height, margin: `0 ${margin}`}} src={src} />)
+            let style
+            switch(i) {
+                case 0: style = {height: height, margin: `0 ${margin} 0 0`}; break
+                case 4: style = {height: height, margin: `0 ${margin}`}; break
+                default: style = {height: height, margin: `0 0 0 ${margin}`}; break
+            }
+            list.push(<Tag.Icon className={styles['icon']} key={i} style={style} src={src} />)
         }
         
         return (<div className={cn} style={style}>{ list }</div>)
