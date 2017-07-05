@@ -148,7 +148,7 @@ class BaseSwiper extends React.Component {
         const move = this.state.move;
         const range = this.state.range;
 
-        const children = this.props.children.map((child, index) => {
+        const children = React.Children.map(this.props.children,(child,index) => {
             let left = `${move}px`;
             let transform = `translateX(${index * 100 + range}%)`;
 
