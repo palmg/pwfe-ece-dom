@@ -99,10 +99,10 @@ class BaseMark extends React.Component {
 }
 
 export const StarRMark = props => 
-    <BaseMark solid="yellowRoundStar" hollow="grayRoundStar" height={props.height} point={props.point || 0} margin={props.margin} />
+    <BaseMark solid="yellowRoundStar" hollow="grayRoundStar" height={props.height} point={props.point || 0} margin={props.margin} style={props.style} />
 
 export const StarTMark = props => 
-    <BaseMark solid="yellowTriStar" hollow="grayTriStar" height={props.height} point={props.point || 0} margin={props.margin} />
+    <BaseMark solid="yellowTriStar" hollow="grayTriStar" height={props.height} point={props.point || 0} margin={props.margin} style={props.style} />
 
 export const CloverMark = props => 
-    <BaseMark solid="greenClover" hollow="transparentClover" height={props.height} point={props.point || 0} margin={props.margin} />
+    <BaseMark solid="greenClover" hollow="transparentClover" height={props.height} point={props.point || 0} margin={props.margin} style={props.style} />
