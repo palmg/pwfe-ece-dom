@@ -72,7 +72,7 @@ class BaseSwiper extends React.Component {
      * @param event
      */
     touchStartHandler(event) {
-        event.preventDefault();
+        // event.preventDefault();
         const point = touchEvent(event);
 
 
@@ -99,7 +99,7 @@ class BaseSwiper extends React.Component {
      * @param event
      */
     touchMoveHandler(event) {
-        event.preventDefault();
+        // event.preventDefault();
         const point = touchEvent(event, this.state.startPageX, this.state.startPageY);
 
         this.setState({
@@ -112,7 +112,7 @@ class BaseSwiper extends React.Component {
      * @param event
      */
     touchEndHandler(event) {
-        event.preventDefault();
+        // event.preventDefault();
         const point = touchEvent(event, this.state.startPageX, this.state.startPageY);
 
         const translateX = 100;//偏移百分比
