@@ -4,7 +4,6 @@
 import React from 'react'
 import BaseBtn from './button'
 import Tag from 'pwfe-dom/tag'
-import defIcon from './green-circle-plus.png'
 //样式
 import classNames from 'classnames/bind'
 import styles from './iconButton.scss'
