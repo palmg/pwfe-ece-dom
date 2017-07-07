@@ -5,21 +5,25 @@
     border-radius: .2rem;
     background: #ffffff;
     .minus {
+        width: 2rem;
+        height: 100%;
         border: none;
         border-right: 1px solid #D1D1D1;
         border-radius: .2rem 0 0 .2rem;
-        width: 2rem;
-        height: 100%;
+        font-size: 0.9rem;
+        font-weight: bold;
         color: #D1D1D1;
         cursor: pointer;
         background: transparent;
     }
     .add {
+        width: 2rem;
+        height: 100%;
         border: none;
         border-left: 1px solid #D1D1D1;
         border-radius: 0 .2rem .2rem 0;
-        width: 2rem;
-        height: 100%;
+        font-size: 0.9rem;
+        font-weight: bold;
         color: #D1D1D1;
         cursor: pointer;
         background: transparent;
@@ -30,9 +34,12 @@
         width: 4rem;
         height: 100%;
         border: none;
+        font-size: .75rem;
+        font-weight: bold;
         text-align: center;
         color: #555555;
         -webkit-appearance: none;
+        background: transparent;
 
         &:disabled {
             background: #ffffff;
